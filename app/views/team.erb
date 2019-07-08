@@ -6,9 +6,9 @@
 
 <% @members.each.with_index do |member, index| %>
   <div class="members">
-    <h3>Hero Name: <%= params["team"]["members"][index]["name"] %></h3>
-    <p>Hero Power: <%= params["team"]["members"][index]["power"] %></p>
-    <p>Hero Biography: <%= params["team"]["members"][index]["bio"] %></p>
+    <h3>Hero Name: <%= member.name %></h3>
+    <p>Hero Power: <%= member.power %></p>
+    <p>Hero Biography: <%= member.bio %></p>
     <br>
   </div>
 <% end %>
