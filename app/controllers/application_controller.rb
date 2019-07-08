@@ -14,7 +14,7 @@ class App < Sinatra::Base
     params[:team][:members].each do |details|
 
     end
-    
+
     erb :team
   end
 
