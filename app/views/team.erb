@@ -3,12 +3,13 @@
   <h2><%= params["team"]["motto"] %></h2>
 </div><br>
 
-<div class="members">
-  <% @members.each.with_index do |member, index|
+
+<% @members.each.with_index do |member, index|
+  <div class="members">
   <h3>Hero Name: <%= params["team"]["members"][index]["name"] %></h3>
   <p>Hero Power: <%= params["team"]["members"][index]["power"] %></p>
   <p>Hero Biography: <%= params["team"]["members"][index]["bio"] %></p>
   <br>
 
-</div>
+  </div>
 <% end %>
