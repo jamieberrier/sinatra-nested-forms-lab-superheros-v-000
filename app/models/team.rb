@@ -1,4 +1,4 @@
-class team
+class Team
 
 
 end
